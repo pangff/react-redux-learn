@@ -4,7 +4,7 @@
 var Activity = React.createClass({
     render:function() {
         return (
-            <div style={{height:300+'px',background:'#F00000'}}>
+            <div style={{height:100+'px',background:'#F00000'}}>
                 <h1>Activity</h1>
             </div>
         );
@@ -16,7 +16,7 @@ var Share = React.createClass({
 
     render:function() {
         return (
-            <div style={{height:300+'px',background:'#F23456'}}>
+            <div style={{height:100+'px',background:'#F23456'}}>
                 <h1>Share</h1>
             </div>
         );
@@ -28,7 +28,7 @@ var ShareRank = React.createClass({
 
     render:function() {
         return (
-            <div style={{height:300+'px',background:'#F98928'}}>
+            <div style={{height:100+'px',background:'#F98928'}}>
                 <h1>ShareRank</h1>
             </div>
         );

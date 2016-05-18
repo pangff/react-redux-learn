@@ -1,16 +1,3 @@
-/**
- * Created by pangff on 16/5/5.
- */
-var Activity = React.createClass({
-    render: function () {
-        return (
-            <div style={{height:300+'px',background:'#F00000'}}>
-                <h1>Activity</h1>
-            </div>
-        );
-    }
-});
-
 
 var Share = React.createClass({
     componentWillMount: function () {
@@ -37,7 +24,6 @@ var Share = React.createClass({
     },
     render: function () {
         var params = this.props.params;
-        this.setProps({params:'123'});
         return (
             <div style={{height:300+'px',background:'#F23456'}}>
                 <h1>Share=={params}</h1>
@@ -46,16 +32,6 @@ var Share = React.createClass({
     }
 });
 
-
-var ShareRank = React.createClass({
-    render: function () {
-        return (
-            <div style={{height:300+'px',background:'#F98928'}}>
-                <h1>ShareRank</h1>
-            </div>
-        );
-    }
-});
 
 var MyApp = React.createClass({
     getInitialState:function(){
@@ -97,8 +73,6 @@ var MyApp = React.createClass({
             <div>
                 <button onClick={this.changeShareParam}>修改share参数</button>
                 <Share params={this.state.shareParams}/>
-                <Activity />
-                <ShareRank />
             </div>
         );
     }
